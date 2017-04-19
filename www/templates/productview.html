@@ -1,0 +1,47 @@
+<ion-view title="Product Details" class="product-view">
+  <ion-nav-buttons side="left">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+    <ion-content class="has-header" overflow-scroll="true" scrollbar-y="true" class = "padding-top padding dash-content">
+      <div class="list">
+        <div class="list card">
+      		<div class="item item-avatar">
+        		<img src="../img/g1.jpg">
+      		</div>
+
+	   		<div class="item item-text-wrap">
+	   			<div class="list list-inset">
+	     			<div class="item">
+	     				<div class="item item-body">
+	     					<img src="../img/g1.jpg" class="full-image">
+	     				</div>
+	     				<div class="padding text-center">
+        					<h3>Rate the Product</h3>
+       					<div>
+                  <a href="javascript:" ng-repeat="r in ratingArr" class="padding" style="text-decoration:none;font-size: 160%;">
+                      <i class="icon {{r.icon}}" ng-click="setRating(r.question,r.value)"></i>
+                  </a>
+                </div>
+      					</div>
+
+
+	     			<div class="item" ng-show="productDetails.descr == null">
+	     				No description available yet
+	     			</div>
+
+	     			<div class="item">
+	     				{{ productDetails.descr }}
+	     			</div>
+	     		</div>
+	     	</div>
+     	</div>
+    </div>
+</ion-content>
+	<div class="nav-buttons">
+        <div ng-click="toggleFlag()" class="fab button padding" ng-class="{'unflag-border' : productDetails.flag == null}">
+            <i class="icon ion ion-flag"></i>
+        </div>
+    </div>
+</ion-view>
+
+

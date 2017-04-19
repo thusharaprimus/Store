@@ -1,0 +1,11 @@
+{
+  "name": "YpIt",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.2"
+  },
+  "dependencies": {
+  	"ionic-ratings": "^0.3.0",
+    "ionic-toast": "^0.4.1"
+  }
+}

@@ -1,0 +1,92 @@
+<ion-view title="Dashboard" class="dash-view">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-search" ng-click=search()></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header skin">
+        <div class="item item-divider text-center">
+            Gents
+        </div>
+
+        <ion-scroll has-bouncing="true" direction="x" overflow-scroll="false" scrollbar-x="false">
+            <div class = "row scroll-horiz">
+                <div ng-click="viewDetails(item)" ng-repeat="item in categories.Gents" class="card col col-20 thumb-card">
+                    <!-- <h5 class="product-head-text text-center"> {{ item.name.slice(0, 10) }}</h5> -->
+                    <div class="item item-body item-thumb">
+                        <img src = "../img/g2.jpg">
+                    </div>
+                    <h5 class="product-head-text text-center"> $ {{ item.price.toFixed(2)}} </h5>
+                </div>
+            </div>
+        </ion-scroll>
+
+        <div class="item item-divider text-center">
+            Ladies
+        </div>
+
+        <ion-scroll has-bouncing="true" direction="x" overflow-scroll="false" scrollbar-x="false">
+            <div class = "row scroll-horiz">
+                <div  ng-click = "viewDetails(item)" ng-repeat="item in categories['Ladies']" class="list card col col-20 thumb-card">
+                    <h5 class="product-head-text text-center"> {{ item.name.slice(0, 10) }} </h5>
+                    <div class="item item-body item-thumb">
+                        <img class="full-image" src="{{ item.image }}">
+                    </div>
+
+                    <h5 class="product-head-text text-center"> $ {{ item.price.toFixed(2)}} </h5>
+                </div>
+            </div>
+        </ion-scroll>
+
+        <div class="item item-divider text-center">
+            Kids
+        </div>
+
+        <ion-scroll has-bouncing="true" direction="x" overflow-scroll="false" scrollbar-x="false">
+            <div class = "row scroll-horiz">
+                <div ng-click="viewDetails(item)" ng-repeat="item in categories.Kids" class="card col col-20 thumb-card">
+                    <h5 class="product-head-text text-center"> {{ item.name.slice(0, 10) }}</h5>
+                    <div class="item item-body item-thumb">
+                        <img class="full-image" src = "{{ item.image }}">
+                    </div>
+                    <h5 class="product-head-text text-center"> $ {{ item.price.toFixed(2)}} </h5>
+                </div>
+            </div>
+        </ion-scroll>
+
+        <div class="item item-divider text-center">
+            Accesseries
+        </div>
+
+        <ion-scroll has-bouncing="true" direction="x" overflow-scroll="false" scrollbar-x="false">
+            <div class = "row scroll-horiz">
+                <div ng-click="viewDetails(item)" ng-repeat="item in categories.Accesseries" class="card col col-20 thumb-card">
+                    <h5 class="product-head-text text-center"> {{ item.name.slice(0, 10) }}</h5>
+                    <div class="item item-body item-thumb">
+                        <img class="full-image" src = "{{ item.image }}">
+                    </div>
+                    <h5 class="product-head-text text-center"> $ {{ item.price.toFixed(2)}} </h5>
+                </div>
+            </div>
+        </ion-scroll>
+
+        <div class="item item-divider text-center">
+            Gifts
+        </div>
+
+        <ion-scroll has-bouncing="true" direction="x" overflow-scroll="false" scrollbar-x="false">
+            <div class = "row scroll-horiz">
+                <div ng-click="viewDetails(item)" ng-repeat="item in categories.Gifts" class="card col col-20 thumb-card">
+                    <h5 class="product-head-text text-center"> {{ item.name.slice(0, 10) }}</h5>
+                    <div class="item item-body item-thumb">
+                        <img class="full-image" src = "{{ item.image }}">
+                    </div>
+                    <h5 class="product-head-text text-center"> $ {{ item.price.toFixed(2)}} </h5>
+                </div>
+            </div>
+        </ion-scroll>
+
+    </ion-content>
+    </ion-scroll>
+</ion-view>

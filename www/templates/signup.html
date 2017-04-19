@@ -1,0 +1,40 @@
+<ion-view hide-nav-bar="true" view-title="Signup" class = "login-view">
+  <ion-content scroll="false">
+     <div class="row login-header">
+      <img src="../img/ll.png">
+    </div>
+
+    <div class="row login-body">
+      <div class="list list-inset col col-center col-80 col-offset-10 bg-transparent">
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.fname" type="text" placeholder="Firstname" class="white">
+        </label>
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.lname" type="text" placeholder="Lastname" class="white">
+        </label>
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.email" type="text" placeholder="Email" class="white">
+        </label>
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.uname" type="text" placeholder="Username" class="white">
+        </label>
+
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.passwd" type="password" placeholder="Password" class="white">
+        </label>
+
+        <label class="item item-input bg-transparent glass-input">
+          <input ng-model="user.repasswd" type="password" placeholder="Re-enter password" class="white">
+        </label>
+
+        <button ng-click="signup()" class="button button-block button-positive">
+            SignUp
+        </button>
+
+        <button ng-click="goToLogin()" class="button button-block button-outline button-light">
+            Back
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

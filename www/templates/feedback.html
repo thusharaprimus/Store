@@ -1,0 +1,21 @@
+<ion-view title="Feedback" class="feedback-view">
+	<ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-android-send" ng-click=feed()></button>
+    </ion-nav-buttons>
+	<ion-content class="has-header">
+		<div class="list">
+			<li class="item">
+				From:
+				<h3 class="user-email text-left"> thushara.sandakelum00@gmail.com </h3>
+			</li>			
+		</div>
+		<div class="row feedback-body">
+      		<div class="list list-inset col col-center col-80 col-offset-10 bg-transparent">
+        		<label class="item item-input bg-transparent feedback-input">
+          			<input ng-model="user.feedback" type="text" placeholder="Text your feedback" class="red">
+        		</label>
+        	</div>
+        </div>
+        
+	</ion-content>
+</ion-view>

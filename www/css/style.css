@@ -1,0 +1,248 @@
+.bg-transparent{
+  background: transparent;
+}
+
+/*login styles*/
+.login-header{
+  height: 28vh;
+}
+
+.login-view{
+  background: url("../img/loging.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.login.body{
+	height: 32vh;
+}
+
+.glass-input{
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+label.glass-input > input{
+  color: white;
+  margin-bottom: 2%;
+}
+/**/
+
+/*profile style*/
+.profile-banner{
+  height: 37vh;
+  background-color:#7f8c8d;
+  background-size: cover;
+}
+
+.profile-banner-small{
+  height: 25vh;
+  background: url("../img/cover.jpg") no-repeat ;
+  background-size: 300px;
+}
+.banner-name{
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    position: absolute;
+    top: 5%;
+    left: 31%;
+}
+.profile-destination{
+  color: red;
+  font-size: 1.0em;
+}
+
+.profile-badge{
+  font-size: 0.8em;
+}
+.profile-view{
+  background: url("../img/dash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.profile-pic{
+  display: inline-block;
+  border-radius: 100%;
+  width: 20vh;
+  height: 20vh;
+  border:5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+}
+
+.profile-pic-small{
+  display: inline-block;
+  border-radius: 100%;
+  width: 10vh;
+  height: 10vh;
+  margin-top: 12%;
+}
+.profile-header{
+  margin-top: 40%;
+}
+
+/**/
+/* Dashboard Styles */
+.dash-content{
+  background: #ecf0f1;
+}
+
+.nav-buttons{
+  position: fixed;
+  right: 15%;
+  bottom: 2%;
+}
+.dash-view{
+  background: url("../img/dash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.nav-buttons > .fab{
+  background-color: #e74c3c;
+}
+.thumb-card{
+  height: 87%;
+}
+
+.item-thumb{
+  height:22vh;
+  overflow: hidden;
+}
+/* /Dashboard Styles */
+
+/*fab design*/
+.fab {
+    position: fixed;
+    bottom: 10%;
+    left:80%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    z-index: 20;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    transition: 0.2s linear;
+    transition-property: transform, box-shadow;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.fab.activated {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0, -1px, 0);
+    transform: translate3d(0, -1px, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.fab .icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+/*Horizontal Scrolling */
+.scroll-horiz {
+  width: 200%;
+  height:35%;
+}
+/*Accodition Style */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+/* Text styles */
+.text-white{
+  color:white;
+}
+
+/*product styles */
+.product-head-text{
+  color:#3498db;
+}
+/* /product styles */
+/*Product View*/
+.image-banner{
+  display: block;
+  margin:auto;
+}
+
+.unflag-border{
+  background-color: white !important;
+  border: 4px solid #e74c3c;
+}
+.product-view{
+   background: url("../img/dash.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.fab.unflag-border > .ion-flag{
+  color: #e74c3c;
+}
+/* /Product View*/
+/* Item Divider */
+.item-divider{
+  background-color: #44BBFF;
+  color: #ecf0f1;
+  width:65%;
+  height:6%;
+  border-radius: 22px 99px 22px 99px;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 4px;
+  font-size: large;
+}
+
+/*scroll-content*/
+
+
+/*font styles*/
+.white{
+  color: #ecf0f1;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+
+.product-card{
+  display: flex;
+}
+/*Dark Theme */
+.found{
+  background: #2ecc71;
+}
+.disable{
+  background: #e74c3c;
+}
+/*wishlist*/
+.wishlist-view{
+  background: url("../img/dash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*wishlist*/
+/*feedback*/
+.feedback-view{
+  background: url("../img/dash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.feedback-body{
+  height:4vh;
+}
+
+.feedback-input{
+  border: 0;
+  border-bottom: 2px solid blue;
+}
+
+label.feedback-input > input{
+  color: black;
+  margin-bottom: 2%;
+}
+/*feedback*/

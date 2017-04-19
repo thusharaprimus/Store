@@ -1,0 +1,39 @@
+<ion-nav-view view-title="Profile" class=profile-view>
+    <ion-view hide-nav-bar="true">
+    <ion-content overflow-scroll="true">
+    <div class="profile-banner">
+        <div class="row">
+            <ion-icon></ion-icon>
+            <div class="col col-top text-center">
+                <img class="profile-pic" src="img/profile.jpg" />
+            </div>
+            </div>
+            <div class="row">
+            <div class="col col-bottom text-center">
+                <h1 class="profile-name"></h1>
+                
+            </div>
+        </div>
+    </div>
+        <div class="list">
+            <ul class="list">
+                <li  class="item ion-android-person">First Name </li>
+                    <label class="item item-input">
+                        <input ng-model="profile.fname" type="text" placeholder="Tell us about">
+                    </label>
+                <li class="item ion-android-person"> Last Name </li>
+                    <label class="item item-input">
+                        <input ng-model="profile.lname" type="text" placeholder="Something More">
+                    </label>
+                <li class="item ion-android-call"> Email</li>
+                    <label class="item item-input">
+                        <input ng-model="profile.contact" type="text" placeholder="Contact Number">
+                    </label>
+            </ul>
+        </div>
+            <div class="col text-right">
+                <button class="button button-outline button-block button-positive" ng-click="update()"> All Done </button>
+            </div>
+  </ion-content>
+  </ion-view>
+</ion-nav-view>
